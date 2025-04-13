@@ -10,7 +10,7 @@ def invert_case(String):
     return ''.join(character.lower() if character.isupper() else character.upper() for character in String)
 
 def add_noise(String):
-    return random_noise + String + random_noise
+    return random_noise() + String + random_noise()
 
 def echo(String):
     return (String + " ") * 5 
